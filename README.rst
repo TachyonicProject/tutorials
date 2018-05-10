@@ -1,17 +1,7 @@
-===========================
-Tachyonic Project Tutorials
-===========================
-
-Quick links
------------
-
-* `Website <http://www.tachyonic.org/>`__.
-* `Documentation <http://www.tachyonic.org/sphinx/tutorials>`__.
-
 Installation
-------------
+============
 
-Tachyonic Project Tutorials currently fully supports `CPython <https://www.python.org/downloads/>`__ 3.6.
+Tachyonic Project tutorials currently fully supports `CPython <https://www.python.org/downloads/>`__ 3.6.
 
 
 CPython
@@ -40,7 +30,7 @@ the cythonized tutorials framework with the system's default C compiler.
 Source Code
 -----------
 
-Tachyonic Project Tutorials infrastructure and code is hosted on `GitHub <https://github.com/TachyonicProject/tutorials>`_.
+Tachyonic Project tutorials infrastructure and code is hosted on `GitHub <https://github.com/TachyonicProject/tutorials>`_.
 Making the code easy to browse, download, fork, etc. Pull requests are always
 welcome!
 
