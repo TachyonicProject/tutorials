@@ -95,7 +95,8 @@ Step 2: Create your model
 In true `MVC <https://en.wikipedia.org/wiki/Model–view–controller>`_ fashion, luxon provides us with models that will
 be used to create the database tables.
 
-We'll use a database table called ``articles``, so in the ``articles/models`` directory, create ``articles.py`` with:
+We'll use a database table called ``tachyonic_article``, so in the ``articles/models`` directory, create ``articles.py``
+with:
 
 .. code:: python
 
