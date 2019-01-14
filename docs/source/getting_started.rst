@@ -113,7 +113,7 @@ with:
         id = SQLModel.Uuid(default=uuid4, internal=True)
         title = SQLModel.Fqdn(null=False)
         contents= SQLModel.LongText()
-        author = SQLModel.Text(readonly=True)
+        author = SQLModel.String(readonly=True)
         creation_time = SQLModel.DateTime(default=now, readonly=True)
         primary_key = id
         author_user_ref = SQLModel.ForeignKey(author, infinitystone_user.id)
@@ -155,7 +155,7 @@ In the *articles/views* directory, create a file called *articles.py* with the c
 
     from luxon import register
     from luxon import router
-    from psychokinetic.utils.api import sql_list, obj
+    from luxon.helpers.api import sql_list, obj
 
     from articles.models.articles import tachyonic_article
 
@@ -382,6 +382,13 @@ Create the articles database table:
 .. code::
 
     $ luxon -d articles
+
+Rember to also have a copy of your Infinitysone's ``public.pem`` in this ``articles/`` directory. Symbolic linking
+may come in handy if it is running on the same server:
+
+.. code::
+
+    $ ln -s /path/to/infinitystone/public.pem articles/public.pem
 
 Now we are ready to fire up the REST API portion of our application. We'll use gunicorn (``pip3 install gunicorn`` if
 you have not already) via ``luxon -s``. Let's fire it up on TCP port 8010:
